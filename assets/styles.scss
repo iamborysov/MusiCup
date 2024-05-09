@@ -1,0 +1,223 @@
+@import "fonts/fonts.css";
+
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 24px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background: #16161a;
+}
+.container {
+  width: 100%;
+  padding: 0 105px;
+}
+header {
+  height: 96px;
+  background: #000000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      & + li {
+        margin-left: 30px;
+      }
+
+      a {
+        position: relative;
+
+        &::before {
+          width: 0;
+          height: 2px;
+          background: #fff;
+          content: '';
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+          transition: .3s ease;
+        }
+
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .auth {
+    a {
+      position: relative;
+
+      &::before {
+        width: 0;
+        height: 2px;
+        background: #fff;
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        transition: .3s ease;
+      }
+
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+main {
+  height: calc(100% - 96px);
+
+  section.welcome {
+    height: 100%;
+    background: url("/assets/img/section-bg.jpeg") center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .logo {
+      width: 748px;
+      margin-bottom: 15px;
+    }
+
+    .slogan {
+      font-size: 45.2px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+
+    &-form {
+      width: 100%;
+      max-width: 600px;
+      border: 3px solid #7f5af0;
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        border-bottom: 3px solid #7f5af0;
+
+        & > img {
+          max-width: 200px;
+        }
+      }
+
+      form {
+        padding: 60px 0;
+        text-align: center;
+
+        .form-group {
+          & + .form-group {
+            margin-top: 50px;
+          }
+
+          label {
+            position: relative;
+            display: block;
+            max-width: 400px;
+            margin: 0 auto;
+          }
+
+          span {
+            font-size: 20px;
+            padding: 10px;
+            pointer-events: none;
+            position: absolute;
+            left: 0;
+            top: 13px;
+            transition: 0.2s ease;
+            color: #fff;
+            font-weight: bold;
+          }
+
+          input {
+            padding: 10px;
+            background: #16161a;
+            color: #fff;
+            border: 2px solid #7f5af0;
+            border-radius: 10px;
+            height: 70px;
+            width: 100%;
+            font-size: 20px;
+          }
+
+          input:focus + span, input:not(:placeholder-shown) + span {
+            font-size: 18px;
+            transform: translateY(calc(-100% - 13px));
+            padding: 10px 0;
+          }
+
+          /* For IE Browsers*/
+          input:focus + span, input:not(:-ms-input-placeholder) + span {
+            font-size: 18px;
+            transform: translateY(-100%);
+          }
+        }
+
+        button {
+          height: 80px;
+          max-width: 400px;
+          width: 100%;
+          margin: 50px 0 0;
+          color: #fff;
+          background: #7f5af0;
+          font-size: 24px;
+          font-weight: bold;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}

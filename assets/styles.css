@@ -1,0 +1,199 @@
+@import "fonts/fonts.css";
+* {
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+a {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Proxima Nova", sans-serif;
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  background: #16161a;
+}
+
+.container {
+  width: 100%;
+  padding: 0 105px;
+}
+
+header {
+  height: 96px;
+  background: #000000;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  width: 170px;
+}
+header ul {
+  display: flex;
+}
+header ul li + li {
+  margin-left: 30px;
+}
+header ul li a {
+  position: relative;
+}
+header ul li a::before {
+  width: 0;
+  height: 2px;
+  background: #fff;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+header ul li a:hover::before {
+  width: 100%;
+}
+header .auth a {
+  position: relative;
+}
+header .auth a::before {
+  width: 0;
+  height: 2px;
+  background: #fff;
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .auth a:hover::before {
+  width: 100%;
+}
+
+main {
+  height: calc(100% - 96px);
+}
+main section.welcome {
+  height: 100%;
+  background: url("/assets/img/section-bg.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section.welcome .logo {
+  width: 748px;
+  margin-bottom: 15px;
+}
+main section.welcome .slogan {
+  font-size: 45.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+main .login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+main .login-form {
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid #7f5af0;
+}
+main .login-form .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border-bottom: 3px solid #7f5af0;
+}
+main .login-form .title > img {
+  max-width: 200px;
+}
+main .login-form form {
+  padding: 60px 0;
+  text-align: center;
+}
+main .login-form form .form-group {
+  /* For IE Browsers*/
+}
+main .login-form form .form-group + .form-group {
+  margin-top: 50px;
+}
+main .login-form form .form-group label {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  margin: 0 auto;
+}
+main .login-form form .form-group span {
+  font-size: 20px;
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 13px;
+  transition: 0.2s ease;
+  color: #fff;
+  font-weight: bold;
+}
+main .login-form form .form-group input {
+  padding: 10px;
+  background: #16161a;
+  color: #fff;
+  border: 2px solid #7f5af0;
+  border-radius: 10px;
+  height: 70px;
+  width: 100%;
+  font-size: 20px;
+}
+main .login-form form .form-group input:focus + span, main .login-form form .form-group input:not(:placeholder-shown) + span {
+  font-size: 18px;
+  transform: translateY(calc(-100% - 13px));
+  padding: 10px 0;
+}
+main .login-form form .form-group input:focus + span, main .login-form form .form-group input:not(:-ms-input-placeholder) + span {
+  font-size: 18px;
+  transform: translateY(-100%);
+}
+main .login-form form button {
+  height: 80px;
+  max-width: 400px;
+  width: 100%;
+  margin: 50px 0 0;
+  color: #fff;
+  background: #7f5af0;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
