@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('/lnk/img/sunset.jpg') no-repeat center center/cover;
+    backdrop-filter: blur(20px);
+    color: black;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140vh;
+    position: relative;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/lnk/img/sunset.jpg') no-repeat center center/cover;
+    filter: blur(30px);
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px 0 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.cover {
+    width: 100%;
+    border-radius: 15px;
+}
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.artist {
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.link-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.link-item img {
+    max-height: 50px;
+    width: auto;
+}
+.link-item a {
+    padding: 10px 36px;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.link-item a:hover {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 118, 136, 0.3);
+}
+.logo {
+    margin-top: 40px;
+}
+.logo img {
+    height: 30px;
+}
