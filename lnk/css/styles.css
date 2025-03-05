@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 140vh;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -27,11 +27,11 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
     background: rgba(255, 255, 255, 0.8);
     padding: 30px;
-    margin: 20px 0 40px;
+    margin: 0;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -48,10 +48,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 15px;
-}
-.cover {
-    width: 100%;
     border-radius: 15px;
 }
 .title {
@@ -74,31 +70,50 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+
+@media (max-width: 480px) {
+    .link-item {
+        flex-direction: column; /* Стекування елементів у колонку */
+        align-items: center; /* Вирівнювання по центру */
+        text-align: center;
+        gap: 10px; /* Відступ між лого та кнопкою */
+    }
+
+    .link-item a {
+        width: 70%; /* Робимо кнопку ширшою для кращого вигляду */
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
 .link-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Дозволяє переносити елементи */
     padding: 10px 0;
-    width: 100%; /* Гарантія, що елемент не ширший за контейнер */
+    width: 100%;
 }
 .link-item img {
     max-height: 50px;
     width: auto;
 }
 .link-item a {
-    padding: 10px 36px;
+    flex-shrink: 0;
+    width: 45%;
+    padding: 10px 20px;
     background: white;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 30px;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    flex-shrink: 0; /* Запобігає стисканню кнопки */
-    max-width: 40%; /* Гарантує, що кнопка не займе забагато місця */
-    text-align: center; /* Вирівнює текст */
+    text-align: center;
+    flex-grow: 1; /* Рівномірно займає доступний простір */
+    max-width: 150px; /* Обмеження ширини */
 }
 .link-item a:hover {
     background: linear-gradient(135deg, #ff7eb3, #ff758c);
