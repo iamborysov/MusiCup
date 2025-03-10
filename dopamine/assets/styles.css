@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Unbounded", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 1;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 27px;
+}
+
+.nav {
+  margin: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.nav-links a {
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  padding: 5px 10px;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+.hero-overlay .logo {
+  display: inline-flex;
+  justify-content: center;
+  width: 800px;
+  height: auto;
+  margin: 0 auto 15px;
+}
+@media (max-width: 870px) {
+  .hero-overlay .logo {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+}
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.hero-subtitle {
+  margin-top: 30px;
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.mission {
+  background: rgb(166, 0, 61);
+  background: radial-gradient(circle, rgb(166, 0, 61) 35%, rgb(172, 0, 113) 100%);
+  padding: 100px 20px;
+}
+.mission h2 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.section {
+  padding: 80px 20px;
+}
+.section h1 {
+  font-size: 26px;
+  margin: 20px 0 0 0;
+}
+.section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.artists {
+  padding: 50px 0 100px;
+}
+.artists h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  margin: 80px 0 20px;
+}
+
+.artist-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+.artist-list .artist-card {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.artist-list .artist-card img {
+  display: block;
+  justify-content: center;
+  border-radius: 8px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.artist-list .artist-card:hover {
+  background: #ffcc00;
+  color: #000;
+}
+.artist-list .artist-card p {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.releases {
+  background: rgb(0, 110, 166);
+  background: radial-gradient(circle, rgb(0, 110, 166) 64%, rgb(0, 41, 162) 100%);
+  padding: 50px 0 100px;
+}
+.releases h1 {
+  font-size: 50px;
+  padding-top: 30px;
+  margin: 60px 0 20px;
+}
+.releases p {
+  font-size: 18px;
+}
+
+.release-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.release-list .release-card {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.release-list .release-card img {
+  display: block;
+  justify-content: center;
+  border-radius: 8px;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.release-list .release-card:hover {
+  background: #ffcc00;
+  color: #000;
+}
+.release-list .release-card p {
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.footer {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+.footer img {
+  display: inline-flex;
+  justify-content: center;
+  width: 127px;
+  height: auto;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=styles.css.map */

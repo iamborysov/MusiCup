@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+$primary-color: #fff;
+$bg-color: #000;
+$font-stack: 'Unbounded', sans-serif;
+$accent-color: #ffcc00;
+
+body {
+  font-family: $font-stack;
+  background-color: $bg-color;
+  color: $primary-color;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba($bg-color, 0.95);
+  z-index: 1;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 27px;
+}
+
+.nav {
+  margin: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  a {
+    justify-content: center;
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    padding: 5px 10px;
+
+    &:hover {
+      color: $accent-color;
+      border-bottom: 2px solid $accent-color;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+
+  &-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &-overlay {
+    background: rgba($bg-color, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+
+    .logo {
+      display: inline-flex;
+      justify-content: center;
+      width: 800px;
+      height: auto;
+      margin: 0 auto 15px;
+
+      @media (max-width: 870px) {
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto 15px;
+      }
+    }
+
+  }
+
+  &-title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+.mission {
+  background: rgb(166,0,61);
+  background: radial-gradient(circle, rgba(166,0,61,1) 35%, rgba(172,0,113,1) 100%);
+  padding: 100px 20px;
+
+  h2 {
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    background: $primary-color;
+    color: $bg-color;
+  }
+}
+
+.section {
+  padding: 80px 20px;
+
+  h1 {
+    font-size: 26px;
+    margin: 20px 0 0 0;
+  }
+
+  p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+}
+
+.artists {
+  padding: 50px 0 100px;
+
+  h1 {
+    font-size: 50px;
+    padding-top: 30px;
+    margin: 80px 0 20px;
+  }
+}
+
+.artist-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+
+
+  .artist-card {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+
+    img{
+      display: block;
+      justify-content: center;
+      border-radius: 8px;
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    &:hover {
+      background: $accent-color;
+      color: $bg-color;
+    }
+
+    p {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 200;
+    }
+  }
+}
+
+.releases {
+  background: rgb(0,110,166);
+  background: radial-gradient(circle, rgba(0,110,166,1) 64%, rgba(0,41,162,1) 100%);
+  padding: 50px 0 100px;
+
+  h1 {
+    font-size: 50px;
+    padding-top: 30px;
+    margin: 60px 0 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}
+
+.release-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+
+  .release-card {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: 0.3s;
+
+    img{
+      display: block;
+      justify-content: center;
+      border-radius: 8px;
+      width: 450px;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    &:hover {
+      background: $accent-color;
+      color: $bg-color;
+    }
+
+    p {
+      padding-top: 10px;
+      font-size: 18px;
+      font-weight: 200;
+    }
+  }
+}
+
+.footer {
+  padding: 50px;
+  background: rgba($bg-color, 0.10);
+  font-size: 14px;
+
+  img {
+    display: inline-flex;
+    justify-content: center;
+    width: 127px;
+    height: auto;
+    object-fit: cover;
+  }
+}
