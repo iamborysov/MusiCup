@@ -86,11 +86,11 @@ body {
   justify-content: center;
   width: 800px;
   height: auto;
-  margin: 0 auto 15px;
+  margin: 0 auto 40px;
 }
-@media (max-width: 870px) {
+@media only screen and (max-width: 1270px) {
   .hero-overlay .logo {
-    width: 400px;
+    width: 250px;
     height: auto;
     object-fit: cover;
     margin: 0 auto 15px;
@@ -101,10 +101,16 @@ body {
   font-weight: bold;
 }
 .hero-subtitle {
-  margin-top: 30px;
   font-size: 22px;
   font-weight: 300;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1270px) {
+  .hero-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
 }
 
 .mission {
@@ -117,6 +123,14 @@ body {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1270px) {
+  .mission h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 }
 
 .button {
@@ -182,6 +196,14 @@ body {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
+@media only screen and (max-width: 600px) {
+  .artist-list .artist-card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
+}
 .artist-list .artist-card:hover {
   background: #ffcc00;
   color: #000;
@@ -226,6 +248,14 @@ body {
   width: 450px;
   height: 450px;
   object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .release-list .release-card img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto 15px;
+  }
 }
 .release-list .release-card:hover {
   background: #ffcc00;
