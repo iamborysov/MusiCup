@@ -1,23 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MusiCup</title>
-        <meta name="description" content="" />
-        <link href="assets/styles.css" rel="stylesheet" />
-        <link rel="icon" href="images\logo.png"/>
-    </head>
-    
-    <body>
-        <main>
-            <section class="dev">
-                <div class="logo"><img src="assets/img/logo.png" alt="MusiCup"></div>
-                <div class="text">Hello! We are record label based in Ukraine!</div>
-                <div class="text">ㅤ</div>
-                <div class="text">Curently we are in development. So if you got any question,</div>
-                <div class="text">reach out us through email - contact@musicup.net</div>
-            </section>
-        </main>
-    </body><!DOCTYPE html>
-    <html lang="uk">
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOPAMINE | Record label</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+    </style>
+</head>
+<body class="dark-theme">
+<header class="header">
+    <div class="container">
+        <a href="index.html"><img src="assets/img/dopamine-logo.png" alt="DOPAMINE" class="logo"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#artists">Артисти</a></li>
+                <li><a href="#releases">Релізи</a></li>
+                <!-- <li><a href="#contact">Контакти</a></li> -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <video autoplay muted loop class="hero-video">
+        <source src="/assets/video.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео.
+    </video>
+    <div class="hero-overlay">
+        <h2 class="hero-title"><img src="assets/img/dopamine-logo.png" alt="DOPAMINE" class="logo"></h2>
+        <p class="hero-subtitle">ukranian record label</p>
+    </div>
+</section>
+
+<section id="mission" class="mission">
+    <div class="container">
+        <h2>Наша мета - просувати нові українські таланти</h2>
+        <a href="#releases" class="button">ДИВИТИСЯ РЕЛІЗИ</a>
+    </div>
+</section>
+
+<!-- <section id="about" class="about">
+    <div class="container">
+        <h2>Про нас</h2>
+        <p>ДОФАМІН — це більше, ніж лейбл. Це ком'юніті музикантів, які творять майбутнє звуку.</p>
+    </div>
+</section> -->
+
+<section id="artists" class="artists">
+    <div class="container">
+        <h1>Наші артисти</h1>
+        <div class="artist-list">
+            <div class="artist-card"><a href="https://open.spotify.com/artist/7KzJTgR0RcMCVeFEl2R8Vw?si=FQ9qzWiwRE-BuiSKcP3gTQ"><img src="assets/img/zhmel.jpg" alt="Артист 1"></a><p>віктор жмель</p></div>
+            <div class="artist-card"><a href="https://open.spotify.com/artist/1zEW2RPZbxv5uQ3I5ECAXM?si=OZ8pM8lxR5uOEO590ysSaQ"><img src="assets/release-img/tretyanochi.png" alt="Артист 1"></a><p>galaxxxy</p></div>
+            <div class="artist-card"><a href="https://open.spotify.com/artist/1m9UfNvAz1fpnAbQstS9Wg?si=_eNKq2qEQpe79cy1JgEh1g"><img src="assets/img/borysov.jpg" alt="Артист 1"></a><p>borysov</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="releases" class="releases">
+    <div class="container">
+        <h1>Релізи</h1>
+        <p>Найсвіжіші релізи від наших артистів</p>
+        <div class="release-list">
+            <div class="release-card"><a href="#"><img src="assets/release-img/sonce.jpg" alt="Реліз 2"></a><p>віктор жмель - Сонце</p></div>
+            <div class="release-card"><a href="/lnk/sonce.html"><img src="assets/release-img/sunset.jpg" alt="Реліз 3"></a><p>borysov - Sunset</p></div>
+            <div class="release-card"><a href="#"><img src="assets/release-img/tretyanochi.png" alt="Реліз 1"></a><p>galaxxxy - вже третя ночі</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="contact" class="contact">
+    <div class="container">
+        <h2>Контакти</h2>
+        <p>Email: contact@dofamin.com</p>
+    </div>
+</section> -->
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025&ensp;<img src="assets/img/dopamine-logo.png" alt="">&ensp;Всі права захищені.</p>
+    </div>
+</footer>
+</body>
+</html>
