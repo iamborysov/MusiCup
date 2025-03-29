@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOPAMINE | Record label</title>
+    <title>DOPAMINE | Ukrainian Record Label</title>
     <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
     </style>
@@ -15,11 +16,17 @@
         <a href="index.html"><img src="assets/img/dopamine-logo.png" alt="DOPAMINE" class="logo"></a>
         <nav>
             <ul class="nav-links">
+                <li><a href="#mission">Місія</a></li>
                 <li><a href="#artists">Артисти</a></li>
                 <li><a href="#releases">Релізи</a></li>
-                <!-- <li><a href="#contact">Контакти</a></li> -->
+                <li><a href="#contact">Контакти</a></li>
             </ul>
         </nav>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
     </div>
 </header>
 
@@ -29,59 +36,267 @@
         Ваш браузер не підтримує відео.
     </video>
     <div class="hero-overlay">
-        <h2 class="hero-title"><img src="assets/img/dopamine-logo.png" alt="DOPAMINE" class="logo"></h2>
-        <p class="hero-subtitle">ukranian record label</p>
+        <h2 class="hero-title"><img src="assets/img/dopamine-logo.png" alt="DOPAMINE" class="logo-large"></h2>
+        <p class="hero-subtitle">Ukrainian Record Label</p>
+        <div class="hero-buttons">
+            <a href="#artists" class="button primary-button">Наші артисти</a>
+            <a href="#releases" class="button secondary-button">Нові релізи</a>
+        </div>
     </div>
 </section>
 
 <section id="mission" class="mission">
     <div class="container">
-        <h2>Наша мета - просувати нові українські таланти</h2>
-        <a href="#releases" class="button">ДИВИТИСЯ РЕЛІЗИ</a>
+        <div class="mission-content">
+            <h2>Наша мета</h2>
+            <p class="mission-text">DOPAMINE — це більше, ніж лейбл. Це ком'юніті музикантів, які творять майбутнє звуку. Ми просуваємо нові українські таланти та допомагаємо їм бути почутими у всьому світі.</p>
+            <a href="#releases" class="button highlight-button">СЛУХАТИ ЗАРАЗ</a>
+        </div>
+        <!-- <div class="mission-stats">
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Артистів</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Релізів</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">1M+</span>
+                <span class="stat-label">Прослуховувань</span>
+            </div>
+        </div> -->
     </div>
 </section>
-
-<!-- <section id="about" class="about">
-    <div class="container">
-        <h2>Про нас</h2>
-        <p>ДОФАМІН — це більше, ніж лейбл. Це ком'юніті музикантів, які творять майбутнє звуку.</p>
-    </div>
-</section> -->
 
 <section id="artists" class="artists">
     <div class="container">
-        <h1>Наші артисти</h1>
-        <div class="artist-list">
-            <div class="artist-card"><a href="https://open.spotify.com/artist/7KzJTgR0RcMCVeFEl2R8Vw?si=FQ9qzWiwRE-BuiSKcP3gTQ"><img src="assets/img/zhmel.jpg" alt="Артист 1"></a><p>віктор жмель</p></div>
-            <div class="artist-card"><a href="https://open.spotify.com/artist/1zEW2RPZbxv5uQ3I5ECAXM?si=OZ8pM8lxR5uOEO590ysSaQ"><img src="assets/release-img/tretyanochi.png" alt="Артист 1"></a><p>galaxxxy</p></div>
-            <div class="artist-card"><a href="https://open.spotify.com/artist/1m9UfNvAz1fpnAbQstS9Wg?si=_eNKq2qEQpe79cy1JgEh1g"><img src="assets/img/borysov.jpg" alt="Артист 1"></a><p>borysov</p></div>
+        <h2>Наші артисти</h2>
+        <div class="artists-grid">
+            <div class="artists-card">
+                <div class="artists-image-container">
+                    <img src="assets/img/zhmel.jpg" alt="віктор жмель">
+                    <div class="artists-overlay">
+                        <div class="artists-links">
+                            <a href="zhmel.html" class="artist-link">Профіль</a>
+                            <a href="https://open.spotify.com/artist/7KzJTgR0RcMCVeFEl2R8Vw?si=FQ9qzWiwRE-BuiSKcP3gTQ" class="artist-link">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>віктор жмель</h3>
+                <p class="artists-genre">Поп</p>
+            </div>
+
+          <!--  <div class="artists-card">
+                <div class="artists-image-container">
+                    <img src="assets/release-img/tretyanochi.png" alt="galaxxxy">
+                    <div class="artists-overlay">
+                        <div class="artists-links">
+                            <a href="artist.html" class="artist-link">Профіль</a>
+                            <a href="https://open.spotify.com/artist/1zEW2RPZbxv5uQ3I5ECAXM?si=OZ8pM8lxR5uOEO590ysSaQ" class="artist-link">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>galaxxxy</h3>
+                <p class="artists-genre">Пост-панк</p>
+            </div> -->
+
+            <div class="artists-card">
+                <div class="artists-image-container">
+                    <img src="assets/img/borysov.jpg" alt="borysov">
+                    <div class="artists-overlay">
+                        <div class="artists-links">
+                            <a href="artist.html" class="artist-link">Профіль</a>
+                            <a href="https://open.spotify.com/artist/1m9UfNvAz1fpnAbQstS9Wg?si=_eNKq2qEQpe79cy1JgEh1g" class="artist-link">Spotify</a>
+                        </div>
+                    </div>
+                </div>
+                <h3>borysov</h3>
+                <p class="artists-genre">Інструментальна музыка</p>
+            </div>
+        </div>
+        <div class="section-action">
+            <a href="#" class="button outline-button">Всі артисти</a>
         </div>
     </div>
 </section>
 
-<section id="releases" class="releases">
+<section id="featured" class="featured">
     <div class="container">
-        <h1>Релізи</h1>
-        <p>Найсвіжіші релізи від наших артистів</p>
-        <div class="release-list">
-            <div class="release-card"><a href="#"><img src="assets/release-img/sonce.jpg" alt="Реліз 2"></a><p>віктор жмель - Сонце</p></div>
-            <div class="release-card"><a href="/lnk/sonce.html"><img src="assets/release-img/sunset.jpg" alt="Реліз 3"></a><p>borysov - Sunset</p></div>
-            <div class="release-card"><a href="#"><img src="assets/release-img/tretyanochi.png" alt="Реліз 1"></a><p>galaxxxy - вже третя ночі</p></div>
+        <div class="featured-content">
+            <h2>Віктор Жмель — Сонце</h2>
+            <p class="featured-description">Новий сингл віктора жмеля "Сонце" вже доступний на всіх стрімінгових платформах. Трек, який поєднує в собі меланхолійну атмосферу та надію.</p>
+            <div class="featured-links">
+                <a href="https://open.spotify.com/track/38UAQZbCZUg9lgNcsJb1hC?si=6cfe00de0f4d4c37" class="platform-link spotify">Spotify</a>
+                <a href="https://music.apple.com/ua/album/%D1%81%D0%BE%D0%BD%D1%86%D0%B5-single/1797461732" class="platform-link apple">Apple Music</a>
+                <a href="https://www.youtube.com/watch?v=lYtlUMqAIoM" class="platform-link youtube">YouTube</a>
+            </div>
+        </div>
+        <div class="featured-image">
+            <img src="assets/release-img/sonce.jpg" alt="Сонце - віктор жмель">
         </div>
     </div>
 </section>
 
-<!-- <section id="contact" class="contact">
+<section id="releases" class="release">
     <div class="container">
-        <h2>Контакти</h2>
-        <p>Email: contact@dofamin.com</p>
+        <h2>Нові релізи</h2>
+        <div class="release-grid">
+            <div class="release-card">
+                <div class="release-artwork">
+                    <img src="assets/release-img/sonce.jpg" alt="віктор жмель - Сонце">
+                    <div class="release-overlay">
+                        <a href="#" class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="release-info">
+                    <h3>Сонце</h3>
+                    <p class="release-artist">віктор жмель</p>
+                    <p class="release-date">Березень 2025</p>
+                    <div class="release-links">
+                        <a href="sonce.html" class="listen-link">Слухати</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="release-card">
+                <div class="release-artwork">
+                    <img src="assets/release-img/sunset.jpg" alt="borysov - Sunset">
+                    <div class="release-overlay">
+                        <a href="/lnk/sonce.html" class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="release-info">
+                    <h3>Sunset</h3>
+                    <p class="release-artist">borysov</p>
+                    <p class="release-date">Лютий 2025</p>
+                    <div class="release-links">
+                        <a href="/lnk/sunset.html" class="listen-link">Слухати</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="release-card">
+                <div class="release-artwork">
+                    <img src="assets/release-img/tretyanochi.png" alt="galaxxxy - вже третя ночі">
+                    <div class="release-overlay">
+                        <a href="#" class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="release-info">
+                    <h3>вже третя ночі</h3>
+                    <p class="release-artist">galaxxxy</p>
+                    <p class="release-date">Січень 2025</p>
+                    <div class="release-links">
+                        <a href="#" class="listen-link">Слухати</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="section-action">
+            <a href="#" class="button outline-button">Всі релізи</a>
+        </div>
+    </div>
+</section>
+
+<!-- <section id="newsletter" class="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Залишайтеся на зв'язку</h2>
+            <p>Підпишіться на наші новини, щоб першими дізнаватися про нові релізи, концерти та ексклюзивний контент.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit" class="button">Підписатися</button>
+            </form>
+        </div>
     </div>
 </section> -->
 
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Контакти</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Загальні питання</h3>
+                    <p><a href="mailto:contact@musicup.net">contact@musicup.net</a></p>
+                </div>
+               <!-- ><div class="contact-item">
+                    <h3>Демо</h3>
+                    <p><a href="mailto:demo@dopamine.com">demo@dopamine.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Артисти та букінг</h3>
+                    <p><a href="mailto:artists@dopamine.com">artists@dopamine.com</a></p>
+                </div> -->
+                <div class="contact-social">
+                    <h3>Соціальні мережі</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/dopamine.label" class="social-link">Instagram</a>
+                        <a href="https://t.me/dopamine_label" class="social-link">Telegram</a>
+                        <a href="https://open.spotify.com/user/31u2zi66rjg5fvrdi2zxaqeojf4i?si=e088cf4de98149f0" class="social-link">Spotify</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2025&ensp;<img src="assets/img/dopamine-logo.png" alt="">&ensp;Всі права захищені.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/img/dopamine-logo.png" alt="DOPAMINE">
+                <p class="footer-tagline">Ukrainian Record Label</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <h4>Навігація</h4>
+                    <ul>
+                        <li><a href="#mission">Місія</a></li>
+                        <li><a href="#artists">Артисти</a></li>
+                        <li><a href="#releases">Релізи</a></li>
+                        <li><a href="#contact">Контакти</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="footer-legal">
+                    <h4>Правові</h4>
+                    <ul>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                        <li><a href="#">Умови використання</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DOPAMINE. Всі права захищені.</p>
+        </div>
     </div>
 </footer>
+
+<script>
+    // Simple mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    });
+</script>
 </body>
 </html>
